@@ -1,3 +1,21 @@
+    用colab demo 测试 训练好的 模型, 似乎不太准确, 1.每个音节少0.1秒, 2.音节数量会多一个或少一个, 没有SylNet(https://github.com/diyism/SylNet)准确:
+    jiang3 you3 bo2 bei4 pai1 dao4 dai4 zhe3 nv3 er2 chu1 you2 应该是12个音节
+
+    少了2个:
+    waveform, sr = torchaudio.load("data/4.wav")
+    batch_outputs = model(waveform.cuda())
+    batch_outputs
+    
+    'durations': tensor([23, 13, 15, 44, 42,  9, 26, 12, 18, 27], device='cuda:0'),
+
+    多了1个:
+    waveform, sr = torchaudio.load("data/4_me.wav")
+    batch_outputs = model(waveform.cuda())
+    batch_outputs
+    
+    'durations': tensor([ 60,  16,  14,  39,   9,  18,  12,  13,   5,   8,  12,  31, 112], device='cuda:0'),
+
+
 # S5-HuBERT: Self-Supervised Speaker-Separated Syllable HuBERT
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
