@@ -1,4 +1,7 @@
-    用colab demo 测试 训练好的 模型, 似乎不太准确, 1.每个音节少0.1秒, 2.音节数量会多一个或少一个, 没有SylNet(https://github.com/diyism/SylNet)准确:
+    用colab demo 测试 训练好的 模型, 似乎不太准确,
+    1.每个音节少0.1秒, 
+    2.音节数量会多一个或少一个, 没有SylNet(https://github.com/diyism/SylNet)准确:
+
     jiang3 you3 bo2 bei4 pai1 dao4 dai4 zhe3 nv3 er2 chu1 you2 应该是12个音节
 
     少了2个:
